@@ -34,7 +34,7 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
     ro.surface_flinger.supports_background_blur=1
-
+	
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cherish/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
@@ -111,7 +111,8 @@ PRODUCT_PACKAGES += \
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    ThemePicker
+    ThemePicker \
+	 CherishThemesStub
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
