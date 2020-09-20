@@ -196,8 +196,6 @@ endif
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
-include vendor/google-customization/config.mk
-
 # Plugins
 include packages/apps/PotatoPlugins/plugins.mk
 
