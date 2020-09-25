@@ -185,13 +185,9 @@ include vendor/cherish/config/branding.mk
 # OTA
 include vendor/cherish/config/ota.mk
 
-# Build
-ifeq ($(CHERISH_NOGAPPS), true)
-include vendor/cherish/config/basicapps.mk
-else
-# Gapps
-include vendor/gapps/config.mk
-endif
+# GApps
+include vendor/google/gms/config.mk
+include vendor/google/pixel/config.mk
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
