@@ -197,7 +197,7 @@ endif
 include vendor/pixelstyle/config.mk
 
 # Plugins
-include packages/apps/PotatoPlugins/plugins.mk
+#include packages/apps/PotatoPlugins/plugins.mk
 
 # Include Cherish theme files
 include vendor/cherish/themes/themes.mk
