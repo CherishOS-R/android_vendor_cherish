@@ -25,7 +25,6 @@ PRODUCT_PACKAGES += \
 	
 # Switch themes
 PRODUCT_PACKAGES += \
-    SwitchTelegram \
     SwitchMD2 \
     SwitchOnePlus \
     SwitchStock \
