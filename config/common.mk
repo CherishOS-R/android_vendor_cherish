@@ -103,6 +103,11 @@ include vendor/cherish/themes/UI/ui.mk
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
+    
+# Required packages
+PRODUCT_PACKAGES += \
+    BluetoothExt \
+    ThemePicker
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
