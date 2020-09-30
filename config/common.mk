@@ -91,14 +91,8 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
-# Include CherishOS Brightness Slider Styles
-include vendor/cherish/themes/BrightnessSlider/slider.mk
-
-# Include CherishOS Nav bar Styles
-include vendor/cherish/themes/Navbar/navbar.mk
-
-# Include CherishOS UI Styles
-include vendor/cherish/themes/UI/ui.mk
+# Include CherishOS Themes Styles
+include vendor/themes/themes.mk
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -211,8 +205,5 @@ endif
 
 # Plugins
 #include packages/apps/PotatoPlugins/plugins.mk
-
-# Include Cherish theme files
-include vendor/cherish/themes/themes.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
