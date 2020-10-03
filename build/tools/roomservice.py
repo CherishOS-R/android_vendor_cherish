@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/cherish.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'ten')
+custom_default_revision =  "eleven"
 custom_dependencies = "cherish.dependencies"
 org_manifest = "CherishOS-Devices"  # leave empty if org is provided in manifest
 org_display = "CherishOS-Devices"  # needed for displaying
