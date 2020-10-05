@@ -123,10 +123,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cherish/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/cherish/overlay/common
 
-# Cutout control overlay
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-    
 # OmniStyle
 PRODUCT_PACKAGES += \
     OmniStyle \
