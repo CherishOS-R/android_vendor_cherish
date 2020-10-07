@@ -36,6 +36,11 @@ PRODUCT_COPY_FILES += \
     vendor/cherish/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/cherish/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
 
+# We modify several neverallows, so let the build proceed
+ifneq ($(TARGET_BUILD_VARIANT),user)
+    SELINUX_IGNORE_NEVERALLOWS := true
+endif
+
 # OTA
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
