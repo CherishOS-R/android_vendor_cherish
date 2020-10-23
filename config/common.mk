@@ -181,9 +181,8 @@ include vendor/cherish/config/branding.mk
 # OTA
 include vendor/cherish/config/ota.mk
 
-# GApps
-include vendor/google/gms/config.mk
-include vendor/google/pixel/config.mk
+# Inherit from GMS product config
+$(call inherit-product, vendor/gapps/gapps.mk)
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
