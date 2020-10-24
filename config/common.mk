@@ -182,7 +182,12 @@ include vendor/cherish/config/branding.mk
 include vendor/cherish/config/ota.mk
 
 # Inherit from GMS product config
+ifeq ($(CHERISH_WITHGAPPS), true)
 $(call inherit-product, vendor/gapps/gapps.mk)
+else
+# AOSP Apps
+include vendor/cherish/config/basicapps.mk
+endif
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
