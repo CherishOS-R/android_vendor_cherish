@@ -5,6 +5,7 @@ cc_prebuilt_library_shared {
 
     overrides: ["libjni_latinime"],
     product_specific: true,
+    check_elf_files: false,
     compile_multilib: "64",
     strip: {
         none: true,
