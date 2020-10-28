@@ -137,6 +137,12 @@ DEVICE_PACKAGE_OVERLAYS += vendor/cherish/overlay/common
 # OmniStyle
 PRODUCT_PACKAGES += \
     OmniStyle \
+
+
+#OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws \
+    WeatherIcons
     
 # PixelSetupWizard overlay
 PRODUCT_PACKAGES += \
